@@ -45,7 +45,7 @@ The following figure provides the list of EFBO classes along with their logical 
 The following figure illustrates different properties among the EFBO classes that reflect the relationships formed by different classes. The dotted arrows represent different inferred properties based on the definitions of the EFBO core classes. 
 
 ![image](https://github.com/smtifahim/EFBO-Ontology-Repository/assets/13155192/1b9ccc6a-f12c-4d19-9aa1-698d80b02e3b)
-**Figure:** EFBO properties among its core classes. 
+**Figure:** The properties relating the core classes of the EFBO.
 
 ## The EFBO Functional Reasoning Category (EFBO-FRC) Ontology
 The EFBO-Functional Reasoning Category (EFBO-FRC) includes the classes associated with different functional reasoning categories under the Entity Classifier Class of the core EFBO. The EFBO-FRC is an importable module for the EFBO core ontology and includes logical axioms to define its reasoning categories based on different EFBO core classes and properties. It should be noted that the EFBO-FRC does not contain any new properties for itself and simply reuses the properties from the EFBO core.
