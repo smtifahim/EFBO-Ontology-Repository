@@ -1,7 +1,7 @@
 - [The EFBO Ontology Repository](#the-efbo-ontology-repository)
-  * [The Event-Based Functional Behaviour Ontolog (EFBO-Core)](#the-event-based-functional-behaviour-ontolog-\(efbo-core\))
-  * [The EFBO Functional Reasoning Category (EFBO-FRC) Ontology](#the-efbo-functional-reasoning-category--efbo-frc--ontology)
-  * [The EFBO Functional Consistency Validation (EFBO-V) Ontology](#the-efbo-functional-consistency-validation--efbo-v--ontology)
+  * [The Event-Based Functional Behaviour Ontolog (EFBO-Core)](#the-event-based-functional-behaviour-ontolog-efbo-core)
+  * [The EFBO Functional Reasoning Category (EFBO-FRC) Ontology](#the-efbo-functional-reasoning-category-efbo-frc-ontology)
+  * [The EFBO Functional Consistency Validation (EFBO-V) Ontology](#the-efbo-functional-consistency-validation-efbo-v-ontology)
 
 # The EFBO Ontology Repository
 This repository contains three ontology files relevant to the Event-Based Functional Behaviour Ontology (EFBO) project as part of a Software Engineering thesis. The thesis introduces an effective ontology-oriented formal approach to representing event-based software systems, that is designed to be both machine-processable and human-comprehensible. Based on the theory of events and change in AI-based commonsense reasoning and the notion of affordances, we developed a novel approach to functional reasoning which is more intuitive and practical compared to the existing formal systems of representation. Refer to the thesis document to learn more about the project.
