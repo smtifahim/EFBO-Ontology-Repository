@@ -18,10 +18,10 @@ The Event-Based Functional Behavior Ontology (EFBO) is an ontology to represent 
 * **Allowable event-interface-agent interactions**
   * How to represent the interactions between the agents, interfaces, and the events of the system?
 
-The EFBO is written in OWL-DL formalism and we have verified its consistency using the HermiT reasoner. The following figure presents the key classes and properties (relations) of the EFBO ontology.
+The EFBO is written in OWL-DL formalism and we have verified its consistency using the HermiT reasoner. The following figure presents the key classes and properties (relations) of the EFBO ontology. On the left, we have the logical is-a hierarchy of the EFBO classes. On the right, we display the relational properties of the ontology.
 
 ![image](https://github.com/smtifahim/EFBO-Ontology-Repository/assets/13155192/7482c524-9686-41f1-bccf-4a6f7078eafc)
-**Figure:** EFBO Classes and Properties. On the left, we have the logical is-a hierarchy of the EFBO classes. On the right, we display the relational properties of the ontology.
+**Figure:** The classes and the properties of the EFBO ontology.
 
 The EFBO classes under the `System Entity` correspond to a set of conceptual entities that are required to describe an event-based system. A system's functional behavior cannot be reasoned without specifying the logical axioms of these
 entities. In EFBO, the system entities are classified into four mutually disjoint classes called the `Agent`, `Event`, `Interface`, and the `Functionality`.
