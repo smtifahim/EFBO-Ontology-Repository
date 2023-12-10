@@ -1,13 +1,5 @@
 # The EFBO Ontology Repository
-This repository contains three ontology files relevant to the Event-Based Functional Behaviour Ontology (EFBO) project as part of a Software Engineering thesis. The thesis introduces an effective ontology-oriented formal approach to representing event-based software systems, that is designed to be both machine-processable and human-comprehensible. Based on the theory of events and change in AI-based commonsense reasoning and the notion of affordances, we developed a novel approach to functional reasoning which is more intuitive and practical compared to the existing formal systems of representation. 
-* Link to the Event-Based Functional Behaviour Ontology (EFBO-Core)
-  * [Link to the readable web version](https://htmlpreview.github.io/?https://github.com/smtifahim/EFBO-Ontology-Repository/blob/master/ebfo-core/Event-Based%20Functional%20Behavior%20Ontology%20(EFBO).html)
-* Link to the EFBO Functional Reasoning Category (EFBO-FRC) Ontology
-  * Link to the readable web version
-* Link to the EFBO Functional Consistency Validation (EFBO-V) Ontology
-  * Link to the readable web version
-
-https://htmlpreview.github.io/?https://github.com/bartaz/impress.js/blob/master/index.html
+This repository contains three ontology files relevant to the Event-Based Functional Behaviour Ontology (EFBO) project as part of a Software Engineering thesis. The thesis introduces an effective ontology-oriented formal approach to representing event-based software systems, that is designed to be both machine-processable and human-comprehensible. Based on the theory of events and change in AI-based commonsense reasoning and the notion of affordances, we developed a novel approach to functional reasoning which is more intuitive and practical compared to the existing formal systems of representation.
 
 Refer to the thesis document to learn more about the project.
 * F. T. Imam (2017). [An ontology-oriented approach to represent and compare the functional behavior of event-based systems](https://qspace.library.queensu.ca/items/5456ca18-bf0a-4cd8-86e7-0e60222eac5d). Doctoral dissertation, Queen's University (Canada).
