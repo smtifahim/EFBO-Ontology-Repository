@@ -60,7 +60,7 @@ To facilitate the validation process, we have developed this utility ontology ca
 
 ![image](https://github.com/smtifahim/EFBO-Ontology-Repository/assets/13155192/3d08ae7e-063d-4d33-9f6a-ea887949daff)
 
-**Figure:** The classes under the System Validation Entity and the properties of the EFBO Validation Ontology (EFBO-V).
+**Figure:** The classes under the `System Validation Entity` and the properties of the `EFBO-V` ontology.
 
 The figure above presents the EFBO-V classes under the System Validation Entity along with the properties of the EFBO-V ontology. The classes in the  figure are self-descriptive and are used to classify different kinds of entities based on their source systems. Directly under the System Validation Entity, we have four kinds of classes as follows: Consistent Entity, Inconsistent Entity, Participant Entity, and Participant System. The rest two of the latter classes are used to classify the entities based on a set of consistency validation rules that we are going to describe in the next section. The rest of the classes are there to classify the set of individuals under the core EFBO classes; i.e., the Event, Agent, and Interface classes, for each of the participating systems.
 
