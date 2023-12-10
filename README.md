@@ -42,7 +42,7 @@ The following figure provides the list of EFBO classes along with their logical 
 ![image](https://github.com/smtifahim/EFBO-Ontology-Repository/assets/13155192/157a792c-2895-42b7-bb53-a50c1ad90f21)
 **Figure:** The EFBO Class Expressions in Pure DL.
 
-The following figure illustrates different properties among the EFBO classes that reflect the relationships formed by different classes. The dotted arrows represent different inferred properties based on the definitions of the EFBO core classes. 
+The following figure illustrates different properties among the EFBO classes that reflect the relationships formed by different classes. The dotted arrows represent inferred relations based on the definitions of the EFBO core classes. 
 
 ![image](https://github.com/smtifahim/EFBO-Ontology-Repository/assets/13155192/1b9ccc6a-f12c-4d19-9aa1-698d80b02e3b)
 **Figure:** The properties relating the core classes of the EFBO.
