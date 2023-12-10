@@ -28,9 +28,9 @@ entities. In EFBO, the system entities are classified into four mutually disjoin
 **Interface:** The class `Interface` represents a set of system entities that serve as a shared boundary between an agent and an event entity. It is necessary for an interface to be associated with an event through the `isInterfaceOf` property.
 
 **Functionality:** A functionality of a system is a named entity that represents a set of activities of a system within an interval. A functionality `f` of a system can represent a single activity; i.e., `f = {a1}`, or a series of contiguous activities; i.e.,
-`f = {a1, a2,..., an}`. The overall functionality of a system can be broken down into a set of named functionalities chosen by a human modeller. Each of the functionalities, in that case, must have a boundary that marks the beginning and the ending events associated with that functionality. Refer to the thesis document for a detaild understanding of the notion of functionality within the context of software systems.
+`f = {a1, a2,..., an}`. The overall functionality of a system can be broken down into a set of named functionalities chosen by a human modeller. Each of the functionalities, in that case, must have a boundary that marks the beginning and the ending events associated with that functionality. Refer to the thesis document for a detailed understanding of the notion of functionality within the context of software systems.
 
-The following figure provides the list of EFBO classes along with their logical expressions in pure DL syntax. The figure also includes the axioms for the remaining defined classes within the EFBO that represent specific types of agents and agent specific user interfaces.
+The following figure provides the list of EFBO classes along with their logical expressions in pure DL syntax. The figure also includes the axioms for the remaining defined classes within the EFBO that represent specific types of agents and agent-specific user interfaces.
 
 ![image](https://github.com/smtifahim/EFBO-Ontology-Repository/assets/13155192/157a792c-2895-42b7-bb53-a50c1ad90f21)
 **Figure:** The EFBO Class Expressions in Pure DL.
@@ -48,7 +48,6 @@ The EFBO-Functional Reasoning Category (EFBO-FRC) includes the classes associate
 
 Closely based on the general reasoning categories in event calculus such as deductive, abductive, and inductive reasoning, we have included several functional reasoning categories for the systems that are modeled based on the EFBO representation. These categories are defined within this utility ontology called EFBO-FRC.
 
-
 ## The EFBO Functional Consistency Validation (EFBO-V) Ontology
 To facilitate the validation process, we have developed this utility ontology called the EFBO Consistency Validation Ontology (EFBO-V). The EFBO-V imports the core EFBO along with the EFBO-FRC ontology and is designed to integrate and classify the functional entities of two given source models into a comparable representation. There are two interrelated categories of classes within the EFBO-V. First is the set of classes under the system validation entity and the second is the set of classes under the functional reasoning category of the EFBO-FRC ontology.
 
@@ -56,5 +55,5 @@ To facilitate the validation process, we have developed this utility ontology ca
 
 **Figure:** The classes under the System Validation Entity and the properties of the EFBO Validation Ontology (EFBO-V).
 
-The figure above presents the EFBO-V classes under the System Validation Entity along with the properties of the EFBO-V ontology. The classes in the  figure are self-descriptive and are used to classify different kinds of entities based on their source systems. Directly under the System Validation Entity, we have four kinds of classes as follows: Consistent Entity, Inconsistent Entity, Participant Entity, and Participant System. The rerst two of the latter classes are used to classify the entities based on a set of consistency validation rules that we are going to describe in the next section. The rest of the classes are there to classify the set of individuals under the core EFBO classes; i.e., the Event, Agent, and Interface classes, for each of the participating systems.
+The figure above presents the EFBO-V classes under the System Validation Entity along with the properties of the EFBO-V ontology. The classes in the  figure are self-descriptive and are used to classify different kinds of entities based on their source systems. Directly under the System Validation Entity, we have four kinds of classes as follows: Consistent Entity, Inconsistent Entity, Participant Entity, and Participant System. The rest two of the latter classes are used to classify the entities based on a set of consistency validation rules that we are going to describe in the next section. The rest of the classes are there to classify the set of individuals under the core EFBO classes; i.e., the Event, Agent, and Interface classes, for each of the participating systems.
 
