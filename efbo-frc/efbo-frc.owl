@@ -1,0 +1,898 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.cs.queensu.ca/~imam/ontologies/efbo-frc.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.cs.queensu.ca/~imam/ontologies/efbo-frc.owl">
+    <Prefix name="" IRI="http://www.cs.queensu.ca/~imam/ontologies/efbo-frc.owl"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="efbo" IRI="http://www.cs.queensu.ca/~imam/ontologies/efbo.owl"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://www.cs.queensu.ca/~imam/ontologies/efbo.owl</Import>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The EFBO Functional Reasoning Categories</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Fahim Imam (imam@queensu.ca)</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This ontology describes the EFBO functional reasoning categories.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">V-1.0, June 2016</Literal>
+    </Annotation>
+    <Declaration>
+        <ObjectProperty IRI="#during"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EventInvokedByAgent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EventWithMutuallyExclusiveEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EventTriggeredByUserAgent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#before"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EventTriggeredByClientAgent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EventInvokedByServerAgent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UserAgentActivity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EventInvokedByUserAgent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#overlaps"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ServerAgentActivity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EventTriggeredByAgent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FRC"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WhoSharesWhat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ActivityByServerInterface"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EventInvokedByClientAgent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#startsWith"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ActivityByClientInterface"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WhatLeadsToDecisionPoint"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ActivityByFunctionality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EventWithParallelEvent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#meets"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DecisionPointRelevantCategory"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WhatFollowsDecisionPoint"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ClientAgentActivity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AgentActivity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DecisionPointEvent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#frcAllenProperty"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#endsWith"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WhatHappensWhere"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ActivityByInterface"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SharedClientServerActivity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ActivityByUserInterface"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WhoDoesWhat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EventTriggeredByServerAgent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ActivityBeforeDecesionPoint"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ActivityAfterDecesionPoint"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#equal"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#ActivityAfterDecesionPoint"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://www.cs.queensu.ca/~imam/ontologies/efbo.owl#Activity"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://www.cs.queensu.ca/~imam/ontologies/efbo.owl#hasPastEvent"/>
+                <Class IRI="#DecisionPointEvent"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ActivityBeforeDecesionPoint"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://www.cs.queensu.ca/~imam/ontologies/efbo.owl#Activity"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://www.cs.queensu.ca/~imam/ontologies/efbo.owl#hasFutureEvent"/>
+                <Class IRI="#DecisionPointEvent"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ActivityByClientInterface"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://www.cs.queensu.ca/~imam/ontologies/efbo.owl#Activity"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://www.cs.queensu.ca/~imam/ontologies/efbo.owl#hasInterface"/>
+                <Class IRI="http://www.cs.queensu.ca/~imam/ontologies/efbo.owl#ClientInterface"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ActivityByFunctionality"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://www.cs.queensu.ca/~imam/ontologies/efbo.owl#Activity"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://www.cs.queensu.ca/~imam/ontologies/efbo.owl#isFunctionalEventOf"/>
+                <Class IRI="http://www.cs.queensu.ca/~imam/ontologies/efbo.owl#Functionality"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ActivityByInterface"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://www.cs.queensu.ca/~imam/ontologies/efbo.owl#Activity"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://www.cs.queensu.ca/~imam/ontologies/efbo.owl#hasInterface"/>
+                <Class IRI="http://www.cs.queensu.ca/~imam/ontologies/efbo.owl#Interface"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ActivityByServerInterface"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://www.cs.queensu.ca/~imam/ontologies/efbo.owl#Activity"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://www.cs.queensu.ca/~imam/ontologies/efbo.owl#hasInterface"/>
+                <Class IRI="http://www.cs.queensu.ca/~imam/ontologies/efbo.owl#ServerInterface"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ActivityByUserInterface"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://www.cs.queensu.ca/~imam/ontologies/efbo.owl#Activity"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://www.cs.queensu.ca/~imam/ontologies/efbo.owl#hasInterface"/>
+                <Class IRI="http://www.cs.queensu.ca/~imam/ontologies/efbo.owl#UserInterface"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ClientAgentActivity"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://www.cs.queensu.ca/~imam/ontologies/efbo.owl#Action"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://www.cs.queensu.ca/~imam/ontologies/efbo.owl#isPerformedBy"/>
+                <Class IRI="http://www.cs.queensu.ca/~imam/ontologies/efbo.owl#ClientAgent"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#DecisionPointEvent"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://www.cs.queensu.ca/~imam/ontologies/efbo.owl#Event"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://www.cs.queensu.ca/~imam/ontologies/efbo.owl#hasNextEvent"/>
+                <ObjectIntersectionOf>
+                    <Class IRI="http://www.cs.queensu.ca/~imam/ontologies/efbo.owl#Event"/>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty IRI="http://www.cs.queensu.ca/~imam/ontologies/efbo.owl#isAlternateEventOf"/>
+                        <Class IRI="http://www.cs.queensu.ca/~imam/ontologies/efbo.owl#Event"/>
+                    </ObjectSomeValuesFrom>
+                </ObjectIntersectionOf>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#EventInvokedByClientAgent"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://www.cs.queensu.ca/~imam/ontologies/efbo.owl#Event"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://www.cs.queensu.ca/~imam/ontologies/efbo.owl#isInvokedBy"/>
+                <Class IRI="http://www.cs.queensu.ca/~imam/ontologies/efbo.owl#ClientAgent"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#EventInvokedByServerAgent"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://www.cs.queensu.ca/~imam/ontologies/efbo.owl#Event"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://www.cs.queensu.ca/~imam/ontologies/efbo.owl#isInvokedBy"/>
+                <Class IRI="http://www.cs.queensu.ca/~imam/ontologies/efbo.owl#ServerAgent"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#EventInvokedByUserAgent"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://www.cs.queensu.ca/~imam/ontologies/efbo.owl#Event"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://www.cs.queensu.ca/~imam/ontologies/efbo.owl#isInvokedBy"/>
+                <Class IRI="http://www.cs.queensu.ca/~imam/ontologies/efbo.owl#UserAgent"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#EventTriggeredByClientAgent"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://www.cs.queensu.ca/~imam/ontologies/efbo.owl#Event"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://www.cs.queensu.ca/~imam/ontologies/efbo.owl#isTriggeredBy"/>
+                <Class IRI="http://www.cs.queensu.ca/~imam/ontologies/efbo.owl#ClientAgent"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#EventTriggeredByServerAgent"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://www.cs.queensu.ca/~imam/ontologies/efbo.owl#Event"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://www.cs.queensu.ca/~imam/ontologies/efbo.owl#isTriggeredBy"/>
+                <Class IRI="http://www.cs.queensu.ca/~imam/ontologies/efbo.owl#ServerAgent"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#EventTriggeredByUserAgent"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://www.cs.queensu.ca/~imam/ontologies/efbo.owl#Event"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://www.cs.queensu.ca/~imam/ontologies/efbo.owl#isTriggeredBy"/>
+                <Class IRI="http://www.cs.queensu.ca/~imam/ontologies/efbo.owl#UserAgent"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#EventWithMutuallyExclusiveEvent"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://www.cs.queensu.ca/~imam/ontologies/efbo.owl#Event"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://www.cs.queensu.ca/~imam/ontologies/efbo.owl#isAlternateEventOf"/>
+                <Class IRI="http://www.cs.queensu.ca/~imam/ontologies/efbo.owl#Event"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#EventWithParallelEvent"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://www.cs.queensu.ca/~imam/ontologies/efbo.owl#Event"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://www.cs.queensu.ca/~imam/ontologies/efbo.owl#hasParallelEvent"/>
+                <Class IRI="http://www.cs.queensu.ca/~imam/ontologies/efbo.owl#Event"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ServerAgentActivity"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://www.cs.queensu.ca/~imam/ontologies/efbo.owl#Action"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://www.cs.queensu.ca/~imam/ontologies/efbo.owl#isPerformedBy"/>
+                <Class IRI="http://www.cs.queensu.ca/~imam/ontologies/efbo.owl#ServerAgent"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SharedClientServerActivity"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://www.cs.queensu.ca/~imam/ontologies/efbo.owl#Activity"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://www.cs.queensu.ca/~imam/ontologies/efbo.owl#isPerformedBy"/>
+                <Class IRI="http://www.cs.queensu.ca/~imam/ontologies/efbo.owl#ClientAgent"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://www.cs.queensu.ca/~imam/ontologies/efbo.owl#isPerformedBy"/>
+                <Class IRI="http://www.cs.queensu.ca/~imam/ontologies/efbo.owl#ServerAgent"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#UserAgentActivity"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://www.cs.queensu.ca/~imam/ontologies/efbo.owl#Action"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://www.cs.queensu.ca/~imam/ontologies/efbo.owl#isPerformedBy"/>
+                <Class IRI="http://www.cs.queensu.ca/~imam/ontologies/efbo.owl#UserAgent"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#WhatFollowsDecisionPoint"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://www.cs.queensu.ca/~imam/ontologies/efbo.owl#Event"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://www.cs.queensu.ca/~imam/ontologies/efbo.owl#hasPreviousEvent"/>
+                <Class IRI="#DecisionPointEvent"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#WhatLeadsToDecisionPoint"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://www.cs.queensu.ca/~imam/ontologies/efbo.owl#Event"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://www.cs.queensu.ca/~imam/ontologies/efbo.owl#hasNextEvent"/>
+                <Class IRI="#DecisionPointEvent"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#ActivityAfterDecesionPoint"/>
+        <Class IRI="#DecisionPointRelevantCategory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ActivityBeforeDecesionPoint"/>
+        <Class IRI="#DecisionPointRelevantCategory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ActivityByClientInterface"/>
+        <Class IRI="#ActivityByInterface"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ActivityByFunctionality"/>
+        <Class IRI="#WhatHappensWhere"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ActivityByInterface"/>
+        <Class IRI="#WhatHappensWhere"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ActivityByServerInterface"/>
+        <Class IRI="#ActivityByInterface"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ActivityByUserInterface"/>
+        <Class IRI="#ActivityByInterface"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AgentActivity"/>
+        <Class IRI="#WhoDoesWhat"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ClientAgentActivity"/>
+        <Class IRI="#AgentActivity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DecisionPointEvent"/>
+        <Class IRI="#DecisionPointRelevantCategory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DecisionPointRelevantCategory"/>
+        <Class IRI="#FRC"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EventInvokedByAgent"/>
+        <Class IRI="#WhoDoesWhat"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EventInvokedByClientAgent"/>
+        <Class IRI="#EventInvokedByAgent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EventInvokedByServerAgent"/>
+        <Class IRI="#EventInvokedByAgent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EventInvokedByUserAgent"/>
+        <Class IRI="#EventInvokedByAgent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EventTriggeredByAgent"/>
+        <Class IRI="#WhoDoesWhat"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EventTriggeredByClientAgent"/>
+        <Class IRI="#EventTriggeredByAgent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EventTriggeredByServerAgent"/>
+        <Class IRI="#EventTriggeredByAgent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EventTriggeredByUserAgent"/>
+        <Class IRI="#EventTriggeredByAgent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EventWithMutuallyExclusiveEvent"/>
+        <Class IRI="#FRC"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EventWithParallelEvent"/>
+        <Class IRI="#FRC"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FRC"/>
+        <Class IRI="http://www.cs.queensu.ca/~imam/ontologies/efbo.owl#EntityClassifier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ServerAgentActivity"/>
+        <Class IRI="#AgentActivity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SharedClientServerActivity"/>
+        <Class IRI="#WhoSharesWhat"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UserAgentActivity"/>
+        <Class IRI="#AgentActivity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WhatFollowsDecisionPoint"/>
+        <Class IRI="#DecisionPointRelevantCategory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WhatHappensWhere"/>
+        <Class IRI="#FRC"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WhatLeadsToDecisionPoint"/>
+        <Class IRI="#DecisionPointRelevantCategory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WhoDoesWhat"/>
+        <Class IRI="#FRC"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WhoSharesWhat"/>
+        <Class IRI="#FRC"/>
+    </SubClassOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#before"/>
+        <ObjectProperty IRI="#frcAllenProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#during"/>
+        <ObjectProperty IRI="#frcAllenProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#endsWith"/>
+        <ObjectProperty IRI="#frcAllenProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#equal"/>
+        <ObjectProperty IRI="#frcAllenProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#meets"/>
+        <ObjectProperty IRI="#frcAllenProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#overlaps"/>
+        <ObjectProperty IRI="#frcAllenProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#startsWith"/>
+        <ObjectProperty IRI="#frcAllenProperty"/>
+    </SubObjectPropertyOf>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">S1</Literal>
+        </Annotation>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://www.cs.queensu.ca/~imam/ontologies/efbo.owl#hasFinalEvent"/>
+                <Variable IRI="#f1"/>
+                <Variable IRI="#e"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://www.cs.queensu.ca/~imam/ontologies/efbo.owl#isFinalEventOf"/>
+                <Variable IRI="#e"/>
+                <Variable IRI="#f2"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#endsWith"/>
+                <Variable IRI="#f1"/>
+                <Variable IRI="#f2"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">S2</Literal>
+        </Annotation>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://www.cs.queensu.ca/~imam/ontologies/efbo.owl#hasFinalEvent"/>
+                <Variable IRI="#f1"/>
+                <Variable IRI="#e1"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://www.cs.queensu.ca/~imam/ontologies/efbo.owl#hasInitialEvent"/>
+                <Variable IRI="#f2"/>
+                <Variable IRI="#e2"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://www.cs.queensu.ca/~imam/ontologies/efbo.owl#hasFutureEvent"/>
+                <Variable IRI="#e1"/>
+                <Variable IRI="#e2"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#before"/>
+                <Variable IRI="#f1"/>
+                <Variable IRI="#f2"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">S3</Literal>
+        </Annotation>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://www.cs.queensu.ca/~imam/ontologies/efbo.owl#hasFinalEvent"/>
+                <Variable IRI="#f1"/>
+                <Variable IRI="#e1"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://www.cs.queensu.ca/~imam/ontologies/efbo.owl#hasNextEvent"/>
+                <Variable IRI="#e1"/>
+                <Variable IRI="#e2"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://www.cs.queensu.ca/~imam/ontologies/efbo.owl#isInitialEventOf"/>
+                <Variable IRI="#e2"/>
+                <Variable IRI="#f2"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#meets"/>
+                <Variable IRI="#f1"/>
+                <Variable IRI="#f2"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">S5</Literal>
+        </Annotation>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://www.cs.queensu.ca/~imam/ontologies/efbo.owl#hasInitialEvent"/>
+                <Variable IRI="#f1"/>
+                <Variable IRI="#e1"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://www.cs.queensu.ca/~imam/ontologies/efbo.owl#hasFinalEvent"/>
+                <Variable IRI="#f1"/>
+                <Variable IRI="#e2"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://www.cs.queensu.ca/~imam/ontologies/efbo.owl#isFunctionalEventOf"/>
+                <Variable IRI="#e1"/>
+                <Variable IRI="#f2"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://www.cs.queensu.ca/~imam/ontologies/efbo.owl#isFunctionalEventOf"/>
+                <Variable IRI="#e2"/>
+                <Variable IRI="#f2"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#during"/>
+                <Variable IRI="#f1"/>
+                <Variable IRI="#f2"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">S4</Literal>
+        </Annotation>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://www.cs.queensu.ca/~imam/ontologies/efbo.owl#hasFunctionalEvent"/>
+                <Variable IRI="#f1"/>
+                <Variable IRI="#e1"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://www.cs.queensu.ca/~imam/ontologies/efbo.owl#isFunctionalEventOf"/>
+                <Variable IRI="#e1"/>
+                <Variable IRI="#f2"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#overlaps"/>
+                <Variable IRI="#f1"/>
+                <Variable IRI="#f2"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">S6</Literal>
+        </Annotation>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://www.cs.queensu.ca/~imam/ontologies/efbo.owl#hasInitialEvent"/>
+                <Variable IRI="#f1"/>
+                <Variable IRI="#e"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://www.cs.queensu.ca/~imam/ontologies/efbo.owl#isInitialEventOf"/>
+                <Variable IRI="#e"/>
+                <Variable IRI="#f2"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#startsWith"/>
+                <Variable IRI="#f1"/>
+                <Variable IRI="#f2"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ActivityAfterDecesionPoint</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Activity After Decesion Point</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ActivityBeforeDecesionPoint</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Activity Before Decesion Point</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ActivityByClientInterface</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Activity by Client Interface</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ActivityByFunctionality</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Activity by Functionality</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ActivityByInterface</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Activity by Interface</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ActivityByServerInterface</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Activity by Server Interface</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ActivityByUserInterface</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Activity by User Interface</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AgentActivity</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Agent Activity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ClientAgentActivity</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Client Agent Activity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DecisionPointEvent</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Decision Point Event</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DecisionPointRelevantCategory</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Decision Point Relevant Category</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#EventInvokedByAgent</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Event Invoked by Agent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#EventInvokedByClientAgent</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Event Invoked by Client Agent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#EventInvokedByServerAgent</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Event Invoked by Server Agent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#EventInvokedByUserAgent</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Event Invoked by User Agent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#EventTriggeredByAgent</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Event Triggered by Agent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#EventTriggeredByClientAgent</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Event Triggered by Client Agent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#EventTriggeredByServerAgent</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Event Triggered by Server Agent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#EventTriggeredByUserAgent</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Event Triggered by User Agent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#EventWithMutuallyExclusiveEvent</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Event with Mutually Exclusive Event</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#EventWithParallelEvent</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Event with Parallel Event</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FRC</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Functional Reasoning Category</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ServerAgentActivity</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Server Agent Activity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SharedClientServerActivity</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Shared Client-Srever Activity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#UserAgentActivity</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">User Agent Activity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#WhatFollowsDecisionPoint</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">What Follows Decision Point</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#WhatHappensWhere</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">What Happens Where</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#WhatLeadsToDecisionPoint</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">What Leads To Decision Point</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#WhoDoesWhat</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Who Does What</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#WhoSharesWhat</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Who Shares What</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
