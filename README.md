@@ -17,11 +17,11 @@ The EFBO is written in OWL-DL formalism and we have verified its consistency usi
 The EFBO classes under the `System Entity` correspond to a set of conceptual entities that are required to describe an event-based system. A system's functional behavior cannot be reasoned without specifying the logical axioms of these
 entities. In EFBO, the system entities are classified into four mutually disjoint classes called the `Agent`, `Event`, `Interface`, and the `Functionality`.
 
-**Agent:** The class `Agent` represents a set of system entities that interacts with a set of interfaces of the system. In order to be an instance of the `Agent` class, it is necessary and sufficient for a system entity to interact with an `interface` through the `interactsWith` property.
+**Agent:** The class `Agent` represents a set of system entities that interact with a set of interfaces of the system. To be an instance of the `Agent` class, it is necessary and sufficient for a system entity to interact with an `interface` through the `interactsWith` property.
 
-**Event:** The class `Event` represents a set of entities that are the occurents of a system. The events, i.e., the instances of the class Event, therefore are atomic and do not travel through time. It is necessary for a system entity to have an interface through the `hasInterface` property in order for that entity to be an instance of the class `Event`.
+**Event:** The class `Event` represents a set of entities that are the occurents of a system. The events, i.e., the instances of the class Event, therefore are atomic and do not travel through time. It is necessary for a system entity to have an interface through the `hasInterface` property for that entity to be an instance of the class `Event`.
 
-**Activity:** The class `Activity` represents a set of actions that are performed by some agent. In order to be an instance of the class `Activity`, it is necessary and sufficient for an action entity to be connected to an agent entity through the `isPerformedBy` property. By definition, an activity must inherit all the properties of an action.
+**Activity:** The class `Activity` represents a set of actions that are performed by some agent. To be an instance of the class `Activity`, it is necessary and sufficient for an action entity to be connected to an agent entity through the `isPerformedBy` property. By definition, an activity must inherit all the properties of an action.
 
 **Interface:** The class `Interface` represents a set of system entities that serve as a shared boundary between an agent and an event entity. It is necessary for an interface to be associated with an event through the `isInterfaceOf` property.
 
@@ -33,7 +33,7 @@ The following figure provides the list of EFBO classes along with their logical 
 ![image](https://github.com/smtifahim/EFBO-Ontology-Repository/assets/13155192/157a792c-2895-42b7-bb53-a50c1ad90f21)
 **Figure:** The EFBO Class Expressions in Pure DL.
 
-The following figure illustrates different properties among the EFBO classes that reflects the relationships formed by different classes. The dotted arros represent different inferred properies based on the definitions of the EFBO core classes. 
+The following figure illustrates different properties among the EFBO classes that reflect the relationships formed by different classes. The dotted arrows represent different inferred properties based on the definitions of the EFBO core classes. 
 
 ![image](https://github.com/smtifahim/EFBO-Ontology-Repository/assets/13155192/1b9ccc6a-f12c-4d19-9aa1-698d80b02e3b)
 **Figure:** EFBO properties among its core classes. 
