@@ -1,4 +1,4 @@
-# The EFBO-Core Ontology
+# The Event-Based Functional Behavior Ontology (EFBO)
 The Event-Based Functional Behavior Ontology (EFBO) is an ontology to represent the functional behavior of event-based systems. The ontology provides logical descriptions of the core concepts associated with event-based systems. Based on the understanding of functional reasoning, the notion of affordances, and the notion of action, events, and change in commonsense reasoning the ontology can effectively represent the functional behavior of event-based systems. The ontology-based representation that we have developed promotes an enhanced comprehension and control over the following defining aspects of the event-based systems.
 * **Allowable set of events**: What are the set of events that exist for an application system and how to represent them?
 * **Allowable flow of events**: How to represent the partial order restrictions on the allowable set of events?
