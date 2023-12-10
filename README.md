@@ -1,8 +1,18 @@
 # The EFBO Ontology Repository
-This repository contains three ontology files relevant to the Event-Based Functional Behaviour Ontology (EFBO) project as part of a Software Engineering thesis. The thesis introduces an effective ontology-oriented formal approach to representing event-based software systems, that is designed to be both machine-processable and human-comprehensible. Based on the theory of events and change in AI-based commonsense reasoning and the notion of affordances, we developed a novel approach to functional reasoning which is more intuitive and practical compared to the existing formal systems of representation. Refer to the thesis document to learn more about the project.
+This repository contains three ontology files relevant to the Event-Based Functional Behaviour Ontology (EFBO) project as part of a Software Engineering thesis. The thesis introduces an effective ontology-oriented formal approach to representing event-based software systems, that is designed to be both machine-processable and human-comprehensible. Based on the theory of events and change in AI-based commonsense reasoning and the notion of affordances, we developed a novel approach to functional reasoning which is more intuitive and practical compared to the existing formal systems of representation. 
+* Link to the Event-Based Functional Behaviour Ontology (EFBO-Core)
+  * [Link to the readable web version](https://htmlpreview.github.io/?https://github.com/smtifahim/EFBO-Ontology-Repository/blob/master/ebfo-core/Event-Based%20Functional%20Behavior%20Ontology%20(EFBO).html)
+* Link to the EFBO Functional Reasoning Category (EFBO-FRC) Ontology
+  * Link to the readable web version
+* Link to the EFBO Functional Consistency Validation (EFBO-V) Ontology
+  * Link to the readable web version
+
+https://htmlpreview.github.io/?https://github.com/bartaz/impress.js/blob/master/index.html
+
+Refer to the thesis document to learn more about the project.
 * F. T. Imam (2017). [An ontology-oriented approach to represent and compare the functional behavior of event-based systems](https://qspace.library.queensu.ca/items/5456ca18-bf0a-4cd8-86e7-0e60222eac5d). Doctoral dissertation, Queen's University (Canada).
 
-## The EFBO-Core Ontology
+## The Event-Based Functional Behaviour Ontolog (EFBO-Core)
 The Event-Based Functional Behavior Ontology (EFBO) is an ontology to represent the functional behavior of event-based systems. The ontology provides logical descriptions of the core concepts associated with event-based systems. Based on the understanding of functional reasoning, the notion of affordances, and the notion of action, events, and change in commonsense reasoning the ontology can effectively represent the functional behavior of event-based systems. The ontology-based representation that we have developed promotes an enhanced comprehension and control over the following defining aspects of the event-based systems.
 * **Allowable set of events**: What are the set of events that exist for an application system and how to represent them?
 * **Allowable flow of events**: How to represent the partial order restrictions on the allowable set of events?
@@ -47,7 +57,7 @@ The EFBO-Functional Reasoning Category (EFBO-FRC) includes the classes associate
 Closely based on the general reasoning categories in event calculus such as deductive, abductive, and inductive reasoning, we have included several functional reasoning categories for the systems that are modeled based on the EFBO representation. These categories are defined within this utility ontology called EFBO-FRC.
 
 
-## The EFBO Consistency Validation (EFBO-V) Ontology
+## The EFBO Functional Consistency Validation (EFBO-V) Ontology
 To facilitate the validation process, we have developed this utility ontology called the EFBO Consistency Validation Ontology (EFBO-V). The EFBO-V imports the core EFBO along with the EFBO-FRC ontology and is designed to integrate and classify the functional entities of two given source models into a comparable representation. There are two interrelated categories of classes within the EFBO-V. First is the set of classes under the system validation entity and the second is the set of classes under the functional reasoning category of the EFBO-FRC ontology.
 
 ![image](https://github.com/smtifahim/EFBO-Ontology-Repository/assets/13155192/3d08ae7e-063d-4d33-9f6a-ea887949daff)
