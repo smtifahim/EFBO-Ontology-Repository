@@ -4,19 +4,19 @@
 * [The EFBO Functional Reasoning Category (EFBO-FRC) Ontology](#the-efbo-functional-reasoning-category-efbo-frc-ontology)
 * [The EFBO Functional Consistency Validation (EFBO-V) Ontology](#the-efbo-functional-consistency-validation-efbo-v-ontology)
 
-This repository contains three ontology files relevant to the Event-Based Functional Behaviour Ontology (EFBO) project, developed as part of a Software Engineering thesis. The thesis introduces a novel, ontology-oriented formal approach to represent event-based software systems that is designed to be both machine-processable and human-comprehensible. Based on the theory of events and change in AI-based commonsense reasoning and the notion of affordances, we developed a novel approach to functional reasoning which is more intuitive and practical compared to the existing formal systems of representation. Refer to the thesis document to learn more.
+This repository contains three ontology files relevant to the Event-Based Functional Behaviour Ontology (EFBO) project, developed as part of a Software Engineering thesis. The thesis introduces a novel, ontology-oriented formal approach to represent and model event-based software systems. The approach is more intuitive and practical compared to the existing formal systems of representation in that it allows formal reasoning while maintaining the critical aspects of human comprehension. Refer to the thesis document to learn more.
 * F. T. Imam (2017). [An ontology-oriented approach to represent and compare the functional behavior of event-based systems](https://qspace.library.queensu.ca/items/5456ca18-bf0a-4cd8-86e7-0e60222eac5d). Doctoral dissertation, Queen's University (Canada).
 
 ## The Event-Based Functional Behaviour Ontolog (EFBO-Core)
 The Event-Based Functional Behavior Ontology (EFBO) is an ontology to represent the functional behavior of event-based software systems. The ontology provides logical specifications for the core concepts associated with event-based systems. Based on the understanding of functional reasoning, the notion of affordances, and the notion of action, events, and change in commonsense reasoning the ontology can effectively represent the functional behavior of event-based systems. The ontology-based representation promotes enhanced comprehension and control over the following defining aspects of the event-based systems.
 * **Allowable set of events**
-  * What are the set of events that exist for an application system and how to represent them?
+  * What are the set of events that exist for a system and how to represent them?
 * **Allowable flow of events**
   * How to represent the partial order restrictions on the allowable set of events?
 * **Event locations and interfaces**
   * How to describe the system in terms of its events and their associated interfaces?
 * **Allowable event-interface-agent interactions**
-  * How to represent the interactions between the agents, interfaces, and the events of the system?
+  * How to represent the interactions among the agents, interfaces, and events of the system?
 
 The EFBO is written in OWL-DL formalism and we have verified its consistency using the HermiT reasoner. The following figure presents the key classes and properties (relations) of the EFBO ontology. On the left, we have the logical is-a hierarchy of the EFBO classes. On the right, we display the relational properties of the ontology.
 
